@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.errorContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.errorIcon {
+    color: #fc3d62;
+}
+
+.errorText {
+    font-size: 24px;
+}
+
+.errorButton {
+    background-color: #61DAFA;
+    box-shadow: 0px 5px 25px rgba(97, 218, 250, 0.5);
+    border: none;
+    font-family: 'Montserrat';
+    cursor: pointer;
+}
+
+.errorButton p {
+    font-size: 16px;
+    margin: 16px 6px 16px 6px;
+}

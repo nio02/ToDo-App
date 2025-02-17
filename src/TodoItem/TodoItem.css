@@ -1,0 +1,56 @@
+.listItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FAFAFA;
+    box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.15);
+    height: 100px;
+    width: 600px;
+    margin-top: 24px;
+}
+
+.listItem p {
+    margin: 24px 0 24px 24px;
+    width: calc(100% - 120px);
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.listText--completed {
+    text-decoration: line-through;
+}
+
+.checkItem--false {
+    color: #7c7c7c;
+    fill: #7c7c7c;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 12px;
+}
+
+.checkItem--completed {
+    color: #01be01;
+    fill: #01be01;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 12px;
+}
+
+.deleteItem {
+    color: black;
+    fill: #7c7c7c;
+    margin-top: -93px;
+    font-size: 24px;
+}
+
+.deleteItem:hover {
+    color: red;
+    cursor: pointer;
+    fill: red;
+}
+
+.checkItem--false:hover {
+    fill: #01be01;
+}
