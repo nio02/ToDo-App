@@ -1,0 +1,15 @@
+.FoundContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.FoundIcon {
+    color: #7c7c7c;
+    height: 295px;
+}
+
+.FoundText{
+    font-size: 20px;
+}

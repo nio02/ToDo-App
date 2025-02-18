@@ -42,7 +42,7 @@ function AppUI(){
 
             {(!loading && todos.length === 0 && !error) && <EmptyTodos/>}
 
-            {(!loading && todos.length !== 0 &&searchedTodos.length === 0 && !error) && <FoundTodos/>}
+            {(!loading && todos.length !== 0 && searchedTodos.length === 0 && !error) && <FoundTodos/>}
 
             {searchedTodos.map(todo => (
               <TodoItem 
