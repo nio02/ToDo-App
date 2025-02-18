@@ -1,7 +1,6 @@
 import React from 'react';
 import { AppUI } from './AppUI';
 import { TodoProvider } from '../TodoContext';
-import { useLocalStorage } from '../TodoContext/useLocalStorage';
 
 //Diccionario Inicial
 // const defaultTodos = [

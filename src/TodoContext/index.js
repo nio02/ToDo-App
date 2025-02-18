@@ -1,4 +1,4 @@
-import React, { children } from "react";
+import React from "react";
 import { useLocalStorage } from "./useLocalStorage";
 
 const TodoContext = React.createContext();
@@ -18,8 +18,6 @@ function TodoProvider({ children }) {
   const completedTodos = todos.filter(todo => todo.completed).length;
   const totalTodos = todos.length;
 
-
-  console.log('los usuarios buscan todos de ' + searchValue);
   //Función para filtrar en la barra de búsqueda
   const searchedTodos = todos.filter(
     (todo) => {

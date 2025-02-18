@@ -9,7 +9,6 @@ function CreateTodoButton(){
       <button className='createTodoButton' 
       onClick={
         () => {
-          console.log('le diste click')
           setOpenModal((value)=>!value)
         }
       }
