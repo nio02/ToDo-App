@@ -37,7 +37,7 @@ function TodoProvider({ children }) {
   const addTodo = (text) => {
     const newTodos = [...todos];
     newTodos.push({
-      text: text,
+      text,
       completed: false
     });
     saveTodos(newTodos);
