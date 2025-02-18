@@ -1,9 +1,9 @@
-import React, { Children } from "react";
+import React, { children } from "react";
 import { useLocalStorage } from "./useLocalStorage";
 
 const TodoContext = React.createContext();
 
-function TodoProvider({children}) {
+function TodoProvider({ children }) {
   //Estados
   const {
     item: todos, 
@@ -33,7 +33,15 @@ function TodoProvider({children}) {
       return todoText.includes(searchText);
     }
   );
-
+  //Función para añadir ToDo's
+  const addTodo = (text) => {
+    const newTodos = [...todos];
+    newTodos.push({
+      text: text,
+      completed: false
+    });
+    saveTodos(newTodos);
+  };
   //Función para completar ToDo's
   const checkTodos = (text) => {
     const newTodos = [...todos];
@@ -54,6 +62,7 @@ function TodoProvider({children}) {
     newTodos.splice(todoIndex, 1);
     saveTodos(newTodos);
   };
+  
 
     return(
         <TodoContext.Provider value={{
@@ -67,7 +76,8 @@ function TodoProvider({children}) {
             checkTodos,
             deleteTodo,
             openModal,
-            setOpenModal
+            setOpenModal,
+            addTodo
         }}>
             {children}
         </TodoContext.Provider>
